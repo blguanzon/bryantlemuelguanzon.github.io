@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryant Lemuel Guanzon's Responsive Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .photos img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+        }
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .columns {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bryant Lemuel Guanzon's Responsive Page</h1>
+
+        <!-- Responsive Pictures -->
+        <div class="photos">
+            <img src="closeup.jpg" alt="Closeup Photo">
+            <img src="medium.png" alt="Medium Shot Photo">
+            <img src="wideshot.jpg" alt="Wideshot Photo">
+        </div>
+
+        <!-- Ten Commandments (using Lorem Ipsum for placeholder text) -->
+        <h2>Ten Commandments</h2>
+        <div class="columns">
+            <div class="column">
+                <ol>
+                    <li>Thou shalt have no other gods before me.</li>
+                    <li>Thou shalt not make unto thee any graven image, or any likeness 
+                        of any thing that is in heaven above, or that is in the earth beneath, 
+                        or that is in the water under the earth: Thou shalt not bow down thyself 
+                        to them, nor serve them: for I the LORD thy God am a jealous God, visiting 
+                        the iniquity of the fathers upon the children unto the third and fourth 
+                        generation of them that hate me; And shewing mercy unto thousands of them 
+                        that love me, and keep my commandments.</li>
+                    <li>Thou shalt not take the name of the LORD thy God in vain; for the LORD 
+                        will not hold him guiltless that taketh his name in vain.</li>
+                    <li>Remember the sabbath day, to keep it holy. Six days shalt thou labour, 
+                        and do all thy work: But the seventh day is the sabbath of the LORD thy God: 
+                        in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, 
+                        nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates: 
+                        For in six days the LORD made heaven and earth, the sea, and all that in them is, 
+                        and rested the seventh day: wherefore the LORD blessed the sabbath day, and hallowed it.</li>
+                    <li>Honour thy father and thy mother: that thy days may be long upon the land which the LORD thy God giveth thee.
+                    </li>
+                </ol>
+            </div>
+            <div class="column">
+                <ol start="6">
+                    <li>Thou shalt not kill.</li>
+                    <li>Thou shalt not commit adultery.</li>
+                    <li>Thou shalt not steal.</li>
+                    <li>Thou shalt not bear false witness against thy neighbour.</li>
+                    <li>Thou shalt not covet thy neighbour's house, thou shalt not covet thy neighbour's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour's.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Hobbies -->
+        <h2>Hobbies</h2>
+        <div class="columns">
+            <div class="column">
+                <p>GOLF</p>
+            </div>
+            <div class="column">
+                <p>SLEEP</p>
+            </div>
+            <div class="column">
+                <p>COMPUTER GAMES</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
